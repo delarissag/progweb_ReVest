@@ -42,7 +42,7 @@ A plataforma incentiva o consumo consciente e a moda circular.
 
 ---
 
-## Requisitos do professor atendidos até o momento
+## Requisitos atendidos até o momento
 
 - [x] Catálogo de produtos (peças de roupa)
 - [x] Página de detalhes do produto
