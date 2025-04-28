@@ -1,0 +1,281 @@
+:root {
+    --rosa-principal: #D14D7F;
+    --rosa-claro: #FCE4EC;
+    --branco: #FFF9FB;
+    --texto: #5A2A44;
+    --cinza: #888;
+}
+
+/* ------ NAVBAR ------ */
+.navbar-brand {
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.nav-link {
+    font-size: 1.15rem;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: var(--rosa-principal) !important;
+}
+
+/* Ícones da navbar */
+.navbar-nav .nav-link i {
+    vertical-align: middle;
+    transition: color 0.2s;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .dropdown-toggle:hover {
+    color: var(--rosa-principal);
+}
+
+.dropdown-menu .dropdown-item i {
+    color: var(--rosa-principal);
+}
+
+.badge-carrinho {
+    font-size: 0.7rem;
+    background: var(--rosa-principal);
+    color: #fff;
+    border-radius: 999px;
+    padding: 2.5px 6px;
+    position: absolute;
+    top: 2px;     /* Menor valor para colar no topo */
+    right: 2px;   /* Menor valor para colar na direita */
+    transform: none; /* Remove deslocamento extra */
+    box-shadow: 0 1px 4px rgba(209,77,127,0.08);
+    line-height: 1;
+    min-width: 16px;
+    text-align: center;
+}
+
+/* ------ HERO SECTION ------ */
+.hero {
+    width: 100%;
+    min-height: 330px;
+    padding: 60px 0 80px 0;
+    background: linear-gradient(135deg, var(--rosa-claro) 0%, #f8bbd0 100%);
+}
+
+/* ------ BOTÃO PRINCIPAL ------ */
+.cta-button {
+    background: var(--rosa-principal);
+    color: white;
+    border-radius: 30px;
+    border: none;
+    font-size: 1.2rem;
+    transition: background 0.3s;
+}
+
+.cta-button:hover,
+.login-button:hover {
+    background: #B53A6B;
+}
+
+/* ------ CARDS DE ITENS ------ */
+.item-card {
+    border-radius: 20px;
+    background: white;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.item-card:hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 8px 24px rgba(209, 77, 127, 0.09);
+}
+
+.item-image {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    object-fit: cover;
+    height: 260px;
+}
+
+.item-info {
+    padding: 26px 18px 16px 18px;
+    text-align: left;
+}
+
+/* Detalhes dos itens */
+.item-details {
+    color: var(--cinza);
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+/* Botão do card */
+.add-button {
+    background: var(--rosa-claro);
+    color: var(--rosa-principal);
+    border-radius: 20px;
+    border: none;
+    font-weight: 600;
+    transition: background 0.3s, color 0.3s;
+}
+
+.add-button:hover {
+    background: var(--rosa-principal);
+    color: white;
+}
+
+/* ------ LOGIN PAGE ------ */
+
+/* Fundo e texto */
+body, .bg-custom {
+    background: var(--branco);
+    color: var(--texto);
+}
+
+/* Container de login */
+.login-container {
+    max-width: 380px;
+    width: 100%;
+    background: white;
+    border-radius: 25px;
+    box-shadow: 0 5px 24px rgba(209,77,127,0.06);
+    padding: 40px 30px;
+}
+
+/* Logo do login */
+.logo {
+    color: var(--rosa-principal);
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+h1 {
+    color: var(--texto);
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 0.2em;
+}
+
+.subtitulo {
+    color: var(--texto);
+    margin-bottom: 1.2em;
+    font-size: 1.05rem;
+}
+
+/* Campos de formulário */
+.campo, .form-control {
+    border-radius: 12px;
+    padding: 12px 14px;
+    font-size: 1rem;
+    border: 1px solid #e3e3e3;
+}
+
+.campo:focus, .form-control:focus {
+    border-color: var(--rosa-principal);
+    box-shadow: 0 0 0 1px var(--rosa-principal, #D14D7F);
+}
+
+/* Botão de login */
+.login-button {
+    background: var(--rosa-principal);
+    color: #fff;
+    border-radius: 16px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding: 12px;
+    border: none;
+    transition: background 0.3s;
+}
+
+.link-cinza {
+    color: var(--cinza);
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.2s;
+}
+
+.link-cinza:hover {
+    color: var(--rosa-principal);
+    text-decoration: underline;
+}
+
+/* Divider customizada */
+.divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: var(--cinza);
+    font-size: 0.98rem;
+    position: relative;
+    margin: 24px 0;
+}
+.divider::before, .divider::after {
+    content: "";
+    flex: 1;
+    border-bottom: 1px solid #eee;
+    margin: 0 10px;
+}
+
+/* Social login */
+.social-icon {
+    width: 40px;
+    height: 40px;
+    background: var(--rosa-claro);
+    color: var(--rosa-principal);
+    font-size: 1.25rem;
+    font-weight: bold;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    transition: background 0.3s;
+    box-shadow: 0 2px 7px rgba(209,77,127,0.04);
+    padding: 0;
+}
+
+.social-icon:hover {
+    background: #f8bbd0;
+    color: #fff;
+}
+.btn-voltar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: var(--rosa-claro);
+    color: var(--rosa-principal);
+    border: none;
+    box-shadow: 0 2px 8px rgba(209,77,127,0.05);
+    transition: background 0.2s, color 0.2s;
+    z-index: 1050;
+}
+
+.btn-voltar:hover {
+    background: var(--rosa-principal);
+    color: #fff;
+}
+.btn-voltar svg {
+    display: block;
+}
+/* Botão "Ver detalhes" personalizado */
+.btn-ver-detalhes {
+    border: 1.5px solid var(--rosa-principal);
+    color: var(--rosa-principal);
+    background: #fff;
+    border-radius: 20px;
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 7px 22px;
+    transition: 
+        background 0.2s,
+        color 0.2s,
+        border 0.2s,
+        box-shadow 0.25s;
+    box-shadow: none;
+}
+
+.btn-ver-detalhes:hover, .btn-ver-detalhes:focus {
+    background: var(--rosa-principal);
+    color: #fff;
+    border-color: var(--rosa-principal);
+    box-shadow: 0 4px 16px rgba(209, 77, 127, 0.07);
+    text-decoration: none;
+}
