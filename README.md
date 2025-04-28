@@ -11,7 +11,8 @@ Desenvolver um site de **banco de trocas de roupas**, onde não há transações
 A plataforma incentiva o consumo consciente e a moda circular.
 
 - [Protótipo no Figma](https://www.figma.com/design/SzuSETj2EnJg5eQpBUnnap/Untitled?node-id=0-1&t=3wFFJJm4wea3lvJO-1)
-- Tema do trabalho: [Loja Online - progweb-app-ideas](https://github.com/hsborges/progweb-app-ideas/blob/master/temas/loja-online.md)
+- [Link do github](https://github.com/delarissag/progweb_ReVest.git)
+
 
 ---
 
